@@ -56,3 +56,7 @@ the use of solar sailin space exploration
 </td>
 </tr>
 </table>
+
+## training 
+
+https://deepspeech.readthedocs.io/en/v0.8.2/TRAINING.html
