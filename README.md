@@ -20,9 +20,6 @@ three small is to commemorate columbus's journal the new world five hundred year
 >>> 
 ```
 
-
-
-
 <table>
   <thead>
     <tr>
@@ -32,12 +29,16 @@ three small is to commemorate columbus's journal the new world five hundred year
   </thead>
   <tr>
     <td>
-      <img src="WX20201015-203355%402x.png" height="60">
+      <img src="WX20201015-203355%402x.png" height="100">
     </td>
     <td>
 <pre>
-timewell in the way for races to mason the moon in nineteen ninety two by solar sale
-three small is to commemorate columbus's journal the new world five hundred years ago and the ones at the moon it's a promote the use of solar sailin space exploration
+timewell in the way for races to mason the 
+moon in nineteen ninety two by solar sale
+three small is to commemorate columbus's 
+journal the new world five hundred years 
+ago and the ones at the moon it's a promote 
+the use of solar sailin space exploration
 </pre>
 </td>
 </tr>
