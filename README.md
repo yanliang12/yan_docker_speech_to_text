@@ -20,44 +20,24 @@ three small is to commemorate columbus's journal the new world five hundred year
 >>> 
 ```
 
-<img src="WX20201015-203355%402x.png" height="100">
+
 
 
 <table>
   <thead>
     <tr>
-      <th>Input Photo</th>
-      <th>Output Tagged Photo</th>
-      <th>Output Detected Text</th>
+      <th>Input Speech</th>
+      <th>Output Text</th>
     </tr>
   </thead>
   <tr>
     <td>
-      <img src="https://raw.githubusercontent.com/yanliang12/yan_ocr/main/test4.png" height="180">
-    </td>
-    <td>
-      <img src="https://raw.githubusercontent.com/yanliang12/yan_ocr/main/test4_output.png" height="180">
+      <img src="WX20201015-203355%402x.png" height="60">
     </td>
     <td>
 <pre>
-[
-  {
-    'text': 'LA U R EN', 
-    'score': 0.3055954575538635, 
-    'coordinate': [[590, 31], 
-                  [1021, 31], 
-                  [1021, 122], 
-                  [590, 122]]
-  }, 
-  {
-    'text': 'RAL PH', 
-    'score': 0.24870802462100983, 
-    'coordinate': [[177, 35], 
-                  [533, 35], 
-                  [533, 121], 
-                  [177, 121]]
-   }
-]    
+timewell in the way for races to mason the moon in nineteen ninety two by solar sale
+three small is to commemorate columbus's journal the new world five hundred years ago and the ones at the moon it's a promote the use of solar sailin space exploration
 </pre>
 </td>
 </tr>
