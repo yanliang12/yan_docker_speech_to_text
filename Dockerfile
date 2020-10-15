@@ -21,5 +21,8 @@ RUN mv /DeepSpeech-examples/vad_transcriber/* ./
 
 RUN apt-get install -y sox
 
+RUN git clone https://github.com/yanliang12/yan_docker_speech_to_text.git
+RUN mv /yan_docker_speech_to_text/* ./
+
 CMD bash
 #################################
