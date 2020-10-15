@@ -27,7 +27,20 @@ three small is to commemorate columbus's journal the new world five hundred year
       <th>Output Text</th>
     </tr>
   </thead>
-  <tr>
+<tr>
+    <td>
+      <img src="WX20201015-205650%402x.png" height="100">
+    </td>
+    <td>
+<pre>
+wanted chief just as of the massachusetts 
+supreme court in april the scs current 
+leader edward hennesey reaches the mandatory 
+retirement age of seventy and his successor is
+</pre>
+</td>
+</tr>
+<tr>
     <td>
       <img src="WX20201015-203355%402x.png" height="100">
     </td>
