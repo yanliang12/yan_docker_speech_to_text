@@ -20,7 +20,7 @@ def speech_to_text(input_wav_file):
 	except:
 		temp_wav = "{}.wav".format(time.time())
 		os.system(u"""
-			sox {} {} rate 16000
+			sox {} {} rate 16000 remix 1
 			""".format(input_wav_file, temp_wav))
 		segments, sample_rate, audio_length = wavTranscriber.vad_segment_generator(temp_wav, 1)
 		os.system(u"""
