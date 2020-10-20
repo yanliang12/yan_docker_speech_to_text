@@ -1,5 +1,6 @@
 #############yan_tts.py#############
 import os
+import re
 import sys
 import time
 import shlex
@@ -18,6 +19,12 @@ def speech_to_text(input_wav_file):
 	try:
 		segments, sample_rate, audio_length = wavTranscriber.vad_segment_generator(input_wav_file, 1)
 	except:
+		if bool(re.search('\.mp3$', input_wav_file)):
+			temp_mp3_wav = "{}.wav".format(time.time())
+			os.system(u"""
+				ffmpeg -i {} {}
+				""".format(input_wav_file, temp_mp3_wav))
+			input_wav_file = temp_mp3_wav
 		temp_wav = "{}.wav".format(time.time())
 		os.system(u"""
 			sox {} {} rate 16000 remix 1
@@ -26,7 +33,9 @@ def speech_to_text(input_wav_file):
 		os.system(u"""
 			rm {}
 			""".format(temp_wav))
-	####
+		os.system(u"""
+			rm {}
+			""".format(temp_mp3_wav))	####
 	outputs = []
 	for i, segment in enumerate(segments):
 		audio = np.frombuffer(segment, dtype=np.int16)
