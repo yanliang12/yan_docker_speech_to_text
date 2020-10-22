@@ -19,6 +19,7 @@ def speech_to_text(input_wav_file):
 	try:
 		segments, sample_rate, audio_length = wavTranscriber.vad_segment_generator(input_wav_file, 1)
 	except:
+		temp_mp3_wav = None
 		if bool(re.search('\.mp3$', input_wav_file)):
 			temp_mp3_wav = "{}.wav".format(time.time())
 			os.system(u"""
@@ -33,9 +34,11 @@ def speech_to_text(input_wav_file):
 		os.system(u"""
 			rm {}
 			""".format(temp_wav))
-		os.system(u"""
-			rm {}
-			""".format(temp_mp3_wav))	####
+		if temp_mp3_wav  is not None:
+			os.system(u"""
+				rm {}
+				""".format(temp_mp3_wav))	
+		####
 	outputs = []
 	for i, segment in enumerate(segments):
 		audio = np.frombuffer(segment, dtype=np.int16)
